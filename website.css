@@ -1,0 +1,248 @@
+#ThisText{
+    resize: none;
+    width: 600px;
+    height: 800px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    border-color: black;
+}
+.Navbar{
+    background-color: lightblue;
+    width: 100%;
+    position: absolute;
+    height: 55px;
+}
+.LIST{
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}
+#font{
+    float: right;
+}
+.ULCLASS1{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    display: block;
+  }
+  .settingslist{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  li {
+    float: left;
+  }
+  
+  li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .listnew{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: whitesmoke;
+  }
+  .listnew:hover {
+    background-color: aliceblue;
+  }
+  #myDropDown{
+    background-color: green;
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .filebtn {
+      cursor: pointer;
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: black;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+
+  }
+  
+  .navbar a:hover, .dropdown:hover .savebtn, .savebtn:focus \ {
+    background-color: whitesmoke;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .File-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .File-dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .File-dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+  .filebtn:hover {
+      background-color: #f9f9f9;
+  }
+  #Save :hover{
+    background-color: #f9f9f9;
+    
+  }
+  #titleofwriting{
+    border-color: #f9f9f9;
+    background-color: #f9f9f9;
+    resize: none;
+    height: 20px;
+    font-family: inherit;
+    font-size: medium;
+    color: black;
+  
+   
+  
+  }
+  #titleofwriting:hover{
+    border-color: whitesmoke;
+    color: black;;
+    
+  }
+  #titleforboooook{
+    position: absolute;
+    align-self: center;
+    top: 50px;
+    left: 24px;
+    font-size: 25px;
+    font-family:inherit;
+  }
+  .toggleoptions{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+  .toggleoptions a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .modal {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3 ease-in-out;
+    z-index: -5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal.open {
+    background: rgba(69, 69, 69, 0.15);
+    z-index: 2;
+  }
+  .modal-inner{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: o 1px 4px black;
+    padding: 15px 25px;
+    text-align: center;
+    width: 380px;
+  }
+  .modal-inner h2 {
+    margin: 0;
+  }
+  .modal-inner p {
+    line-height: 24px;
+    margin: 10px 0;
+  }
+  #closeModal, #cancel {
+    background-color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: medium;
+    border-radius: 5px;
+    color: white;
+  }
+  #closeModal{
+    background-color: salmon;
+  }
+  #cancel{
+    background-color: gray;
+  }
+  #closeModal:hover, #cancel:hover {
+    background-color: whitesmoke;
+    color: gray;
+  }

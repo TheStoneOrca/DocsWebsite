@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titleforyourveryownbook">Document</title>
+    <link rel="stylesheet" href="website.css">
+    <!--easiest option is to just save your localStorage variables based on the page. don't just save "savedinput" as a single value. save it as an object (with JSON.stringify()) with the "page" as a key and the value as whatever. then load it (with JSON.parse()) and only use the value from the key matching the current page. -->
+    <script defer src="javafordocs.js"></script>
+</head>
+<body>
+    <center><p1 id="titleforboooook">Title of Story</p1></center>
+        <div class="navbar">
+          <a href="#home">Home</a>
+          <a href="#news">News</a>
+          <div class="dropdown">
+            
+          <button class="filebtn" id="filesaving" onclick="FileFunction()">File
+            <i class="fa fa-caret-down"></i>
+          </button>
+        
+        <div class="File-dropdown-content" id="FileTools">
+            <a onclick="valuesave()" id="Save">Save</a>
+            <a id="openModal">Reset</a>
+            <a href="#">Recent Saves</a>
+            <a><textarea id="titleofwriting" oninput="booktitle()" placeholder="Title of Your Story"></textarea></a>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+          </div>
+          </div> 
+        </div>
+</body>
+<body>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><textarea id="ThisText" placeholder= "Write Text Here" cols=100 rows= 15 on="valuesave()"></textarea></center>
+    <button id="resetarea">
+        reset
+    </button>
+    
+    <!--Save slot --- get the total number of saves, add 1 to it, save the data to localstorage using the new key-->
+ 
+    <button>time</button>
+    <button id="pause">pause</button>
+
+
+    <div class="modal" id="modal">
+      <div class="modal-inner">
+        <h2>Warning</h2>
+        <p>
+          Are you sure you want to perform this action?
+          <footer>Doing this will delete EVERYTHING!</footer>
+        </p>
+        <button id="closeModal" onclick="reseteverything()">delete</button>
+        <button id="cancel">cancel</button>
+        <script>
+          function reseteverything() {
+          const resetareaoftext = document.getElementById("ThisText")
+          const buttonofresetting = document.getElementById("closeModal")
+          buttonofresetting.addEventListener("click", () => {
+            resetareaoftext.value = ""
+            valuesave()
+
+          })};
+        </script>
+      </div>
+    </div>
+    <script>
+        const activealert = document.getElementById("openModal");
+        const closealert = document.getElementById("closeModal");
+        const alert = document.getElementById("modal");
+        const cancel = document.getElementById("cancel")
+
+        activealert.addEventListener("click", () => {
+            alert.classList.add("open")
+        });
+
+        closealert.addEventListener("click", () => {
+            alert.classList.remove("open")
+        });
+        cancel.addEventListener("click", () => {
+          alert.classList.remove("open")
+        });
+    </script>
+
+</body>
+</html>
